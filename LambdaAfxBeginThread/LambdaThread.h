@@ -44,7 +44,7 @@ private:
 
 
 /// <summary> Wrap it using the AfxBeginThread function. </summary>
-/// <param name = "func"> Function, Don't use R Value (Ref Value)!!!  </param>
+/// <param name = "func"> Function, Don't use L Value (Ref Value)!!!  </param>
 /// <param name = "args"> Argument list</param>
 template<class _Fn, class... _Args>
 CWinThread* _AfxBeginThread(_Fn&& func, _Args&&... args)
